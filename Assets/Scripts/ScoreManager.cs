@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour {
     public SceneController scenecontroller;
     public Text Result;
+    public AdManager adManager;
 
     [SerializeField]
     public float delayBeforeLoading = 2f;
@@ -29,10 +30,12 @@ public class ScoreManager : MonoBehaviour {
         if(win)
         {
             timeElapsed += Time.deltaTime;
+            adManager.ShowAd();
         }
         else if(lost)
         {
             timeElapsed += Time.deltaTime;
+            adManager.ShowAd();
         }
         LostText();
         WonText();
