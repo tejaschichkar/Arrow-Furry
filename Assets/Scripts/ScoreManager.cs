@@ -5,9 +5,8 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour {
     public SceneController scenecontroller;
+    public InterstitialAds interstitialAds;
     public Text Result;
-    public AdManager adManager;
-
     [SerializeField]
     public float delayBeforeLoading = 2f;
     [SerializeField]
@@ -30,12 +29,10 @@ public class ScoreManager : MonoBehaviour {
         if(win)
         {
             timeElapsed += Time.deltaTime;
-            adManager.ShowAd();
         }
         else if(lost)
         {
             timeElapsed += Time.deltaTime;
-            adManager.ShowAd();
         }
         LostText();
         WonText();
@@ -57,10 +54,12 @@ public class ScoreManager : MonoBehaviour {
                 if (scenecontroller.Scene == 1)
                 {
                     scenecontroller.PlayScene();
+                    interstitialAds.ShowAd();
                 }
                 else 
                 {
                     scenecontroller.CurrentScene();
+                    interstitialAds.ShowAd();
                 }
             }
         }
@@ -73,6 +72,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.SecScene();
@@ -85,6 +85,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.ThirdScene();
@@ -97,6 +98,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.FourthScene();
@@ -109,6 +111,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.FifthScene();
@@ -121,6 +124,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.SixthScene();
@@ -133,6 +137,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.SeventhScene();
@@ -145,6 +150,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.EigthScene();
@@ -157,6 +163,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.NinthScene();
@@ -169,6 +176,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.TenthScene();
@@ -181,6 +189,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.EleventhScene();
@@ -193,6 +202,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.TwelthScene();
@@ -205,6 +215,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.ThirteenthScene();
@@ -217,6 +228,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.FourteenthScene();
@@ -229,6 +241,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.FifteenthScene();
@@ -241,6 +254,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.SixteenthScene();
@@ -253,6 +267,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.SeventeenthScene();
@@ -265,6 +280,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.EighteenthScene();
@@ -277,6 +293,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.NineteenthScene();
@@ -289,6 +306,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.TwentythScene();
@@ -301,6 +319,7 @@ public class ScoreManager : MonoBehaviour {
             {
                 win = true;
                 Result.text = "You Won";
+                interstitialAds.ShowAd();
                 if (timeElapsed > delayBeforeLoading)
                 {
                     scenecontroller.MainScene();
