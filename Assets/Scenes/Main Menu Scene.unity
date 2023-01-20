@@ -280,9 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544743727027f7646bd7467be1ca4fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _loadBannerButton: {fileID: 0}
-  _showBannerButton: {fileID: 0}
-  _hideBannerButton: {fileID: 0}
   _bannerPosition: 4
   _androidAdUnitId: Banner_Android
 --- !u!4 &102788753
