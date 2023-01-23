@@ -4,7 +4,7 @@ using UnityEngine.Advertisements;
  
 public class BannerAd : MonoBehaviour
 {
-    // For the purpose of this example, these buttons are for functionality testing:
+   
 
  
     [SerializeField] BannerPosition _bannerPosition = BannerPosition.BOTTOM_CENTER;
@@ -16,13 +16,12 @@ public class BannerAd : MonoBehaviour
     {
         // Get the Ad Unit ID for the current platform:
 #if UNITY_IOS
-        _adUnitId = _iOSAdUnitId;
+    _adUnitId = _iOSAdUnitId;
 #elif UNITY_ANDROID
-        _adUnitId = _androidAdUnitId;
+    _adUnitId = _androidAdUnitId;
 #endif
 
-        // Disable the button until an ad is ready to show:
- 
+
         // Set the banner position:
         Advertisement.Banner.SetPosition(_bannerPosition);
  
