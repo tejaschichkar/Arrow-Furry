@@ -48,7 +48,7 @@ public class BannerAd : MonoBehaviour
     // Implement a method to call when the Show Banner button is clicked:
  
     // Implement a method to call when the Hide Banner button is clicked:
-    void HideBannerAd()
+    public void HideBannerAd()
     {
         // Hide the banner:
         Advertisement.Banner.Hide();

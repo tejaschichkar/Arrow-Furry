@@ -27,8 +27,9 @@ public class InterstitialAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSh
     public void ShowAd()
     {
         // Note that if the ad content wasn't previously loaded, this method will fail
-        Debug.Log("Showing Ad: " + _adUnitId);
         Advertisement.Show(_adUnitId, this);
+        Debug.Log("Showing Ad: " + _adUnitId);
+        
     }
  
     // Implement Load Listener and Show Listener interface methods: 
